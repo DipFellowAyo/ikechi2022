@@ -96,7 +96,6 @@ function App() {
             <br />
             <h4>Novatel Hotel, Plateau Hall (6th Floor), Cherry View Estate, By Chevron Roundabout, Off Lekki-Epe Expressway, Lagos.</h4>
         </div>
-
       </div>
 
       <div className="footer">
