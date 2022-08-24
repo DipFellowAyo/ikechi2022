@@ -1,11 +1,11 @@
 import React from "react";
 import Box from "@material-ui/core/Box";
 import { makeStyles } from '@mui/styles';
-import HeroNote from "./hero_note";
+import HeroNote from "./heronote";
 import Navbar from "./navbar";
-import CornerOrnamental from "./corner_ornamental";
-import FlutteringFlowers from "./fluttering_flowers";
-import Avatar from "./rounded_picture";
+import CornerOrnamental from "./cornerornamental";
+import FlutteringFlowers from "./flutteringflowers";
+import Avatar from "./roundedpicture";
 import Countdown from "./countdown";
 import Event from "./event";
 

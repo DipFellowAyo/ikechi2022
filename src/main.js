@@ -3,7 +3,7 @@ import { BrowserRouter, Routes, Route } from 'react-router-dom';
 import { createTheme } from '@mui/material/styles';
 import { ThemeProvider } from '@mui/styles';
 
-import App from './components/App';
+import App from './components/app';
 import Photos from './photos';
 
 

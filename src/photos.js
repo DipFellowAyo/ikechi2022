@@ -1,7 +1,7 @@
 import React from 'react';
 import Box from "@material-ui/core/Box";
 import { makeStyles } from '@mui/styles';
-import CornerOrnamental from './components/corner_ornamental';
+import CornerOrnamental from './components/cornerornamental';
 import Navbar from './components/navbar';
 
 
