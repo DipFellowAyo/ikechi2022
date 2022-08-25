@@ -121,7 +121,7 @@ const Photos = () => {
         <div className={classes.photoGrid}>
             <Box className={classes.photoBox1}>
                 <img className={classes.photo}
-                    src={process.env.PUBLIC_URL+"/images/5-1.JPG"}
+                    src={process.env.PUBLIC_URL+"/images/5-1.jpg"}
                     alt="wedding-img"
                 />
             </Box>
@@ -136,7 +136,7 @@ const Photos = () => {
         <div className={classes.photoGrid}>
             <Box className={classes.photoBox1}>
                 <img className={classes.photo}
-                    src={process.env.PUBLIC_URL+"/images/7.JPG"}
+                    src={process.env.PUBLIC_URL+"/images/7.jpg"}
                     alt="wedding-img"
                 />
             </Box>
@@ -151,7 +151,7 @@ const Photos = () => {
         <div className={classes.photoGrid}>
             <Box className={classes.photoBox1}>
                 <img className={classes.photo}
-                    src={process.env.PUBLIC_URL+"/images/9.JPG"}
+                    src={process.env.PUBLIC_URL+"/images/9.jpg"}
                     alt="wedding-img"
                 />
             </Box>

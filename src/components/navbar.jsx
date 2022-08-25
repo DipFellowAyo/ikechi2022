@@ -51,10 +51,10 @@ function Navbar() {
     return (
         <Box className={classes.navbar}>
             <ul>
-                <Link to="/ikechi2022">
+                <Link to="/home">
                     <li className={classes.navlist}><span className={`${classes.link} ${classes.activeNav}`}>Home</span></li>
                 </Link>
-                <Link to="/ikechi2022/Photos">
+                <Link to="/photos">
                     <li className={classes.navlist}><span className={classes.link}>Photos</span></li>
                 </Link>
                 
