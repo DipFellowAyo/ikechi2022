@@ -20,8 +20,8 @@ function Main() {
             <BrowserRouter>
                 <Suspense fallback={<Loading />}>
                     <Routes>
-                        <Route exact path="/home" element={<App />} />
-                        <Route exact path="/photos" element={<Photos />} />
+                        <Route exact path="/ikechi2022" element={<App />} />
+                        <Route exact path="/ikechi2022/photos" element={<Photos />} />
                     </Routes>
                 </Suspense>
             </BrowserRouter>
