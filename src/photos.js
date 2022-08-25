@@ -91,13 +91,13 @@ const Photos = () => {
         <div className={classes.photoGrid}>
             <Box className={classes.photoBox1}>
                 <img className={classes.photo}
-                    src={process.env.PUBLIC_URL+"/Images/1.JPG"}
+                    src={process.env.PUBLIC_URL+"/images/1.JPG"}
                     alt="wedding-img"
                 />
             </Box>
             <Box className={classes.photoBox2}>
                 <img className={classes.photo}
-                    src={process.env.PUBLIC_URL+"/Images/2.JPG"}
+                    src={process.env.PUBLIC_URL+"/images/2.JPG"}
                     alt="wedding-img"
                 />
             </Box>
@@ -106,13 +106,13 @@ const Photos = () => {
         <div className={classes.photoGrid}>
             <Box className={classes.photoBox1}>
                 <img className={classes.photo}
-                    src={process.env.PUBLIC_URL+"/Images/3.JPG"}
+                    src={process.env.PUBLIC_URL+"/images/3.JPG"}
                     alt="wedding-img"
                 />
             </Box>
             <Box className={classes.photoBox2}>
                 <img className={classes.photo}
-                    src={process.env.PUBLIC_URL+"/Images/4.JPG"}
+                    src={process.env.PUBLIC_URL+"/images/4.JPG"}
                     alt="wedding-img"
                 />
             </Box>
@@ -121,13 +121,13 @@ const Photos = () => {
         <div className={classes.photoGrid}>
             <Box className={classes.photoBox1}>
                 <img className={classes.photo}
-                    src={process.env.PUBLIC_URL+"/Images/5-1.JPG"}
+                    src={process.env.PUBLIC_URL+"/images/5-1.JPG"}
                     alt="wedding-img"
                 />
             </Box>
             <Box className={classes.photoBox2}>
                 <img className={classes.photo}
-                    src={process.env.PUBLIC_URL+"/Images/5.JPG"}
+                    src={process.env.PUBLIC_URL+"/images/5.JPG"}
                     alt="wedding-img"
                 />
             </Box>
@@ -136,13 +136,13 @@ const Photos = () => {
         <div className={classes.photoGrid}>
             <Box className={classes.photoBox1}>
                 <img className={classes.photo}
-                    src={process.env.PUBLIC_URL+"/Images/7.JPG"}
+                    src={process.env.PUBLIC_URL+"/images/7.JPG"}
                     alt="wedding-img"
                 />
             </Box>
             <Box className={classes.photoBox2}>
                 <img className={classes.photo}
-                    src={process.env.PUBLIC_URL+"/Images/8.JPG"}
+                    src={process.env.PUBLIC_URL+"/images/8.JPG"}
                     alt="wedding-img"
                 />
             </Box>
@@ -151,13 +151,13 @@ const Photos = () => {
         <div className={classes.photoGrid}>
             <Box className={classes.photoBox1}>
                 <img className={classes.photo}
-                    src={process.env.PUBLIC_URL+"/Images/9.JPG"}
+                    src={process.env.PUBLIC_URL+"/images/9.JPG"}
                     alt="wedding-img"
                 />
             </Box>
             <Box className={classes.photoBox2}>
                 <img className={classes.photo}
-                    src={process.env.PUBLIC_URL+"/Images/10.JPG"}
+                    src={process.env.PUBLIC_URL+"/images/10.JPG"}
                     alt="wedding-img"
                 />
             </Box>

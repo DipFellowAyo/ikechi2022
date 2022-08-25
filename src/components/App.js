@@ -167,7 +167,7 @@ function App() {
 
         <Box className={classes.hero}>
           <img className={classes.heroImg} 
-            src={process.env.PUBLIC_URL+"ikechi2022/public/Images/6.jpg"}
+            src={process.env.PUBLIC_URL+"/images/6.jpg"}
             alt="hero-img"
           />
           <div className={classes.heroHeader}>
@@ -180,7 +180,7 @@ function App() {
         <div className={classes.avatarBoard}>
           <div className={classes.line1}>
             <Avatar 
-              img = {process.env.PUBLIC_URL+"ikechi2022/public/Images/7.jpg"}
+              img = {process.env.PUBLIC_URL+"/images/7.jpg"}
             />
             <div className={classes.lineText}>
               <h2 className={classes.innerTextH2}>Ikechukwu Udochukwu Adindu</h2>
@@ -199,13 +199,13 @@ function App() {
             <h6 className={classes.innerTextH6}>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</h6>
           </div>
             <Avatar 
-              img = {process.env.PUBLIC_URL+"ikechi2022/public/Images/9.jpg"}
+              img = {process.env.PUBLIC_URL+"/images/9.jpg"}
             />
           </div>
         </div>
       
         <div className={classes.article}>
-          <img className={classes.articleImg} src={process.env.PUBLIC_URL+"ikechi2022/public/vectors/background.png"} alt="article-img" />
+          <img className={classes.articleImg} src={process.env.PUBLIC_URL+"/vectors/background.png"} alt="article-img" />
           <div className={classes.articleNote}>
             <Countdown />
           </div>
@@ -214,7 +214,7 @@ function App() {
         <Event />
 
         <div className={classes.footer}>
-          <img className={classes.footerImg} src={process.env.PUBLIC_URL+"ikechi2022/public/vectors/floral_footer.svg"} alt="floral_footer" />
+          <img className={classes.footerImg} src={process.env.PUBLIC_URL+"/vectors/floral_footer.svg"} alt="floral_footer" />
           {/* <h3 className={classes.footerNote}>© Hezee</h3> */}
         </div>
 
