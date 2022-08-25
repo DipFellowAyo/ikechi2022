@@ -1,5 +1,5 @@
 import React, { Suspense } from 'react';
-import { BrowserRouter, Routes, Route } from 'react-router-dom';
+import { HashRouter, Routes, Route } from 'react-router-dom';
 import { createTheme } from '@mui/material/styles';
 import { ThemeProvider } from '@mui/styles';
 
@@ -17,14 +17,14 @@ const theme = createTheme();
 function Main() {
     return (
         <ThemeProvider theme={theme}>
-            <BrowserRouter>
+            <HashRouter>
                 <Suspense fallback={<Loading />}>
                     <Routes>
                         <Route exact path="/ikechi2022" element={<App />} />
                         <Route exact path="/ikechi2022/photos" element={<Photos />} />
                     </Routes>
                 </Suspense>
-            </BrowserRouter>
+            </HashRouter>
         </ThemeProvider>
     )
 }
