@@ -6,14 +6,14 @@ import { makeStyles } from '@mui/styles';
 const useStyles = makeStyles(theme => ({
   roundedAvatar: {
     borderRadius: '50%',
-    width: '35%',
+    width: '40%',
     overflow: 'hidden',
     [theme.breakpoints.down("md")]: {
 			
 		},
     [theme.breakpoints.down("sm")]: {
 			width: '100%',
-      margin: 'auto',
+      margin: '50px auto',
       borderRadius: '5%'
 		},
   },

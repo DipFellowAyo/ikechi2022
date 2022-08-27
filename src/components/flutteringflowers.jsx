@@ -7,9 +7,10 @@ const useStyles = makeStyles(theme => ({
   flutteringFlowersContainer: {
     position: 'absolute',
     width: '30%',
+    zIndex: '-999',
     transform: 'translate( -50%, -50% )',
     [theme.breakpoints.down("md")]: {
-			
+			width: '40%'
 		},
     [theme.breakpoints.down("sm")]: {
 			position: "revert",

@@ -64,7 +64,7 @@ function HeroNote() {
         
         <Box className={classes.heroNoteContainer}>
             <h1 className={classes.heroText1}>CHISOMEJE <Ring /> IKECHUKWU</h1>
-            <h6 className={classes.heroText2}>September 24, 2022. LEKKI-EPE. LAGOS</h6>
+            <h6 className={classes.heroText2}>September 24, 2022.</h6>
             <h6 className={classes.heroText2}>{getDate()} DAYS TO GO!</h6>
         </Box>
     )

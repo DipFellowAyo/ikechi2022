@@ -17,7 +17,7 @@ const Loading = () => {
 
   return (
     <Box className={classes.centered}>
-      <CircularProgress color='#800020' />
+      <CircularProgress color='primary' />
     </Box>
   )
 }
