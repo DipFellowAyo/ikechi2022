@@ -2,7 +2,7 @@ import React, { Suspense } from 'react';
 import CssBaseline from '@material-ui/core/CssBaseline';
 import { createTheme } from '@mui/material/styles';
 import { ThemeProvider } from '@mui/styles';
-import { HashRouter } from 'react-router-dom';
+import { BrowserRouter } from 'react-router-dom';
 
 // import Loading from '../components/loading';
 import Myroutes from './routes';
@@ -20,11 +20,11 @@ function Main() {
     return (
         <ThemeProvider theme={theme}>
             <CssBaseline>
-                <HashRouter>
+                <BrowserRouter basename='/ikechi2022'>
                     <Suspense>
                         <Myroutes />
                     </Suspense>
-                </HashRouter>
+                </BrowserRouter>
             </CssBaseline> 
         </ThemeProvider>
     )
