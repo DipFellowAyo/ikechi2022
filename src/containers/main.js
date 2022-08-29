@@ -4,9 +4,8 @@ import { createTheme } from '@mui/material/styles';
 import { ThemeProvider } from '@mui/styles';
 import { BrowserRouter } from 'react-router-dom';
 
-// import Loading from '../components/loading';
+import Loading from '../components/loading';
 import Myroutes from './routes';
-
 
 // import App from './components/app';
 // import Photos from './photos';
@@ -20,8 +19,8 @@ function Main() {
     return (
         <ThemeProvider theme={theme}>
             <CssBaseline>
-                <BrowserRouter basename='/ikechi2022'>
-                    <Suspense>
+                <BrowserRouter basename='ikechi2022'>
+                    <Suspense fallback={<Loading />}>
                         <Myroutes />
                     </Suspense>
                 </BrowserRouter>

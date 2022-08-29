@@ -1,0 +1,21 @@
+/* *::before,
+*::after {
+    box-sizing: border-box;
+} */
+
+body {
+    background-color: #eab7a2 !important;
+    width: 100%;
+    height: 100%;
+    margin: 0;
+    padding: 0;
+    text-align: center;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+  }
+
+  /* code {
+    font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
+    monospace;
+  } */
+

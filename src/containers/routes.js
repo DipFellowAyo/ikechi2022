@@ -8,8 +8,8 @@ import {
 } from "../utils/routes";
 
 
-const Home = React.lazy(() => import("../pages/app"))
-const Photos = React.lazy(() => import("../pages/photos"))
+const Home = React.lazy(() => import("../pages/home/home"))
+const Photos = React.lazy(() => import("../pages/photos/photos"))
 
 const Myroutes = () => {
     return (

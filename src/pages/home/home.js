@@ -1,13 +1,27 @@
+import "./index.css";
 import React from "react";
 import Box from "@material-ui/core/Box";
 import { makeStyles } from '@mui/styles';
-import HeroNote from "../components/heronote";
-import Navbar from "../components/navbar";
-import CornerOrnamental from "../components/cornerornamental";
-import FlutteringFlowers from "../components/flutteringflowers";
-import Avatar from "../components/roundedpicture";
-import Countdown from "../components/countdown";
-import Event from "../components/event";
+import HeroNote from "../../components/heronote";
+import Navbar from "../../components/navbar";
+import CornerOrnamental from "../../components/cornerornamental";
+import FlutteringFlowers from "../../components/flutteringflowers";
+import Avatar from "../../components/roundedpicture";
+import Countdown from "../../components/countdown";
+import Event from "../../components/event";
+
+const style = {
+  main: {
+    backgroundColor: '#FFE5B4',
+    width: '100%',
+    height: '100%',
+    margin: '0',
+    padding: '0',
+    textAlign: 'center',
+    WebkitFontSmoothing: 'antialiased',
+    MozOsxFontSmoothing: 'grayscale'
+  }
+}
 
 const useStyles = makeStyles(theme => ({
   hero: {
@@ -167,6 +181,7 @@ const useStyles = makeStyles(theme => ({
     color: '#800020',
     backgroundImage: 'radial-gradient(#bfc0c1 7.2%, transparent 0)',
     backgroundSize: '25px 25px',
+    border: '3px solid #ab936b',
     borderRadius: '2rem',
     boxShadow: '4px 3px 7px 2px #00000040',
     [theme.breakpoints.down("md")]: {
@@ -199,7 +214,7 @@ function App() {
   const classes = useStyles();
 
   return (
-      <Box>
+      <Box style={style.main}>
         <CornerOrnamental />
 
         <Navbar />

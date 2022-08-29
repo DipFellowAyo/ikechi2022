@@ -1,11 +1,12 @@
 import React from "react";
 import Box from "@material-ui/core/Box";
 import { makeStyles } from '@mui/styles';
-import { Link } from 'react-router-dom'
+import { Link } from 'react-router-dom';
+
 
 const useStyles = makeStyles(theme => ({
     navbar: {
-        padding: '0.5%',
+        padding: '0.5% 0',
         textAlign: 'center'
     },
     navlist: {
@@ -50,15 +51,14 @@ function Navbar() {
 
     return (
         <Box className={classes.navbar}>
-            <ul>
-                <Link to="/">
-                    <li className={classes.navlist}><span className={`${classes.link} ${classes.activeNav}`}>Home</span></li>
-                </Link>
-                <Link to="/photos">
-                    <li className={classes.navlist}><span className={classes.link}>Photos</span></li>
-                </Link>
-                
-            </ul>
+                <ul>
+                    <Link to="/">
+                        <li className={classes.navlist}><span className={`${classes.link} ${classes.activeNav}`}>Home</span></li>
+                    </Link>
+                    <Link to="/photos">
+                        <li className={classes.navlist}><span className={classes.link}>Photos</span></li>
+                    </Link>
+                </ul>
         </Box>
     )
 }
