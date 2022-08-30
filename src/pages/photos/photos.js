@@ -1,28 +1,37 @@
 import "./photos.css";
+// import Image from '../../../src/1.JPG'
 import React from 'react';
 import Box from "@material-ui/core/Box";
 import { makeStyles } from '@mui/styles';
 import CornerOrnamental from '../../components/cornerornamental';
 import Navbar from '../../components/navbar';
 
+
 const useStyles = makeStyles(theme => ({
     photoLayout: {
+        // backgroundImage: `url(${Image})`,
+        // backgroundPosition: 'top',
+        // backgroundRepeat: 'no-repeat',
+        // backgroundSize: 'cover',
         padding: '30% 0',
         position: 'relative',
-        width: 'auto',
-        overflow: 'hidden',
+        width: '100%',
+        // overflow: 'hidden',
         backgroundColor: '#000000',
+        [theme.breakpoints.down("md")]: {
+			padding: '0',
+
+		},
     },
     photoLayoutImg: {
-        height: '100%',
+        // height: '100%',
         display: 'block',
         width: '100%',
-        objectFit: 'fill',
-        objectPosition: 'top',
+        objectFit: 'cover',
+        objectPosition: 'center',
         opacity: '0.25',
         [theme.breakpoints.down("md")]: {
-			// display: 'none',
-
+			display: 'none',
 		},
     },
     innerDivs: {
@@ -33,8 +42,8 @@ const useStyles = makeStyles(theme => ({
         left: '50%',
         transform: 'translate( -50%, -50% )',
         [theme.breakpoints.down("md")]: {
-			// position: 'none',
-            // display: 'block',
+			// position: '',
+            display: 'block',
             transform: 'none',
             top: '0',
             left: '0'
@@ -71,7 +80,7 @@ const useStyles = makeStyles(theme => ({
         justifyContent: 'space-evenly',
         [theme.breakpoints.down("md")]: {
             width: '80%',
-            margin: '20px auto',
+            margin: '0 auto ',
 			display: 'grid'
 		},
         [theme.breakpoints.down("sm")]: {
@@ -90,9 +99,10 @@ const useStyles = makeStyles(theme => ({
             transition: 'all 0.3s'
         },
         [theme.breakpoints.down("md")]: {
+            width: '100%',
+            cursor: 'none',
+            margin: '50px auto',
 			"&:hover": {
-                width: '20%',
-                margin: 'auto',
                 transform: 'none',
             },
 		},
