@@ -3,8 +3,8 @@ import "./photos.css";
 import React from 'react';
 import Box from "@material-ui/core/Box";
 import { makeStyles } from '@mui/styles';
-import CornerOrnamental from '../../components/cornerornamental';
-import Navbar from '../../components/navbar';
+import CornerOrnamental from '../components/cornerornamental';
+import Navbar from '../components/navbar';
 
 
 const useStyles = makeStyles(theme => ({

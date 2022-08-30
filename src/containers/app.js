@@ -7,19 +7,15 @@ import { BrowserRouter } from 'react-router-dom';
 import Loading from '../components/loading';
 import Myroutes from './routes';
 
-// import App from './components/app';
-// import Photos from './photos';
-
-
 const theme = createTheme();
 
 
 
-function Main() {
+function App() {
     return (
         <ThemeProvider theme={theme}>
             <CssBaseline>
-                <BrowserRouter basename='/ikechi2022'>
+                <BrowserRouter>
                     <Suspense fallback={<Loading />}>
                         <Myroutes />
                     </Suspense>
@@ -29,4 +25,4 @@ function Main() {
     )
 }
 
-export default Main;
+export default App;

@@ -8,8 +8,9 @@ import {
 } from "../utils/routes";
 
 
-const Home = React.lazy(() => import("../pages/home/home"))
-const Photos = React.lazy(() => import("../pages/photos/photos"))
+const Home = React.lazy(() => import("../pages/home"))
+const Photos = React.lazy(() => import("../pages/photos"))
+
 
 const Myroutes = () => {
     return (
@@ -19,5 +20,6 @@ const Myroutes = () => {
         </Routes>
     )
 }
+
 
 export default Myroutes;

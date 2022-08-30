@@ -2,13 +2,13 @@ import "./index.css";
 import React from "react";
 import Box from "@material-ui/core/Box";
 import { makeStyles } from '@mui/styles';
-import HeroNote from "../../components/heronote";
-import Navbar from "../../components/navbar";
-import CornerOrnamental from "../../components/cornerornamental";
-import FlutteringFlowers from "../../components/flutteringflowers";
-import Avatar from "../../components/roundedpicture";
-import Countdown from "../../components/countdown";
-import Event from "../../components/event";
+import HeroNote from "../components/heronote";
+import Navbar from "../components/navbar";
+import CornerOrnamental from "../components/cornerornamental";
+import FlutteringFlowers from "../components/flutteringflowers";
+import Avatar from "../components/roundedpicture";
+import Countdown from "../components/countdown";
+import Event from "../components/event";
 
 const style = {
   main: {
