@@ -19,7 +19,7 @@ function Main() {
     return (
         <ThemeProvider theme={theme}>
             <CssBaseline>
-                <BrowserRouter basename='ikechi2022'>
+                <BrowserRouter basename='/ikechi2022'>
                     <Suspense fallback={<Loading />}>
                         <Myroutes />
                     </Suspense>

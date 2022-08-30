@@ -2,6 +2,7 @@
   "name": "ikechi2022",
   "version": "0.1.0",
   "private": true,
+  "homepage": ".",
   "dependencies": {
     "-": "^0.0.1",
     "@emotion/react": "^11.10.0",
