@@ -1,4 +1,5 @@
 import React from "react";
+import loadable from '@loadable/component'
 import { Routes, Route } from 'react-router-dom';
 
 
@@ -8,8 +9,8 @@ import {
 } from "../utils/routes";
 
 
-const Home = React.lazy(() => import("../pages/home"))
-const Photos = React.lazy(() => import("../pages/photos"))
+const Home = loadable(() => import("../pages/home"))
+const Photos = loadable(() => import("../pages/photos"))
 
 
 const Myroutes = () => {

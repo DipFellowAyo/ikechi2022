@@ -7,7 +7,9 @@ import { BrowserRouter } from 'react-router-dom';
 import Loading from '../components/loading';
 import Myroutes from './routes';
 
-const theme = createTheme();
+const theme = createTheme({
+    
+});
 
 
 
