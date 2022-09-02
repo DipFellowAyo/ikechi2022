@@ -1,5 +1,6 @@
 import React from 'react';
 // import CssBaseline from '@material-ui/core/CssBaseline';
+import Navbar from '../components/navbar';
 import { createTheme } from '@mui/material/styles';
 import { ThemeProvider } from '@mui/styles';
 import { BrowserRouter, Routes, Route } from 'react-router-dom';
@@ -9,7 +10,6 @@ import {
     LANDING_ROUTE,
     PHOTOS_ROUTE
 } from "../utils/routes";
-import Navbar from '../components/navbar';
 
 // import Loading from '../components/loading';
 // import Myroutes from './routes';
