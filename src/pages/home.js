@@ -176,7 +176,6 @@ const useStyles = makeStyles(theme => ({
     padding: '2%',
     minHeight: '400px',
     maxWidth: '550px',
-    minWidth: '250px',
     background: '#f1f5f8',
     color: '#800020',
     backgroundImage: 'radial-gradient(#bfc0c1 7.2%, transparent 0)',
@@ -216,8 +215,6 @@ function App() {
   return (
       <Box style={style.main}>
         <CornerOrnamental />
-
-        <Navbar />
 
         <Box className={classes.hero}>
           <img className={classes.heroImg} 

@@ -7,7 +7,8 @@ import { Link } from 'react-router-dom';
 const useStyles = makeStyles(theme => ({
     navbar: {
         padding: '0.5% 0',
-        textAlign: 'center'
+        textAlign: 'center',
+        backgroundColor: 'inherit'
     },
     navlist: {
         listStyleType: 'none',

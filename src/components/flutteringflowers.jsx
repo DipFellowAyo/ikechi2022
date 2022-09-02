@@ -5,9 +5,10 @@ import { makeStyles } from '@mui/styles';
 
 const useStyles = makeStyles(theme => ({
   flutteringFlowersContainer: {
+    display: 'block',
     position: 'absolute',
     width: '30%',
-    zIndex: '-999',
+    // zIndex: '-1',
     transform: 'translate( -50%, -50% )',
     [theme.breakpoints.down("md")]: {
 			width: '40%'
@@ -15,7 +16,7 @@ const useStyles = makeStyles(theme => ({
     [theme.breakpoints.down("sm")]: {
 			position: "revert",
       transform: 'none',
-      width: '50%',
+      width: '70%',
       margin: '30px auto'
 		},
   },

@@ -114,7 +114,8 @@ const useStyles = makeStyles(theme => ({
         border: '3px solid #ab936b',
         borderRadius: '1.5rem',
         display: 'block',
-        width: '100%',
+        width: '95%',
+        margin: 'auto',
         objectFit: 'cover',
         objectPosition: 'center'
     }
@@ -127,8 +128,6 @@ const Photos = () => {
   return (
     <Box>
         <CornerOrnamental />
-
-        <Navbar />
 
         <div className={classes.note}>
             <h1 className={classes.noteH1}>OUR PICTURES</h1>

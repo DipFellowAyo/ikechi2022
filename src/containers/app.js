@@ -1,5 +1,5 @@
 import React from 'react';
-import CssBaseline from '@material-ui/core/CssBaseline';
+// import CssBaseline from '@material-ui/core/CssBaseline';
 import { createTheme } from '@mui/material/styles';
 import { ThemeProvider } from '@mui/styles';
 import { BrowserRouter, Routes, Route } from 'react-router-dom';
@@ -9,6 +9,7 @@ import {
     LANDING_ROUTE,
     PHOTOS_ROUTE
 } from "../utils/routes";
+import Navbar from '../components/navbar';
 
 // import Loading from '../components/loading';
 // import Myroutes from './routes';
@@ -18,21 +19,21 @@ const theme = createTheme({
 });
 
 
-
 const Home = loadable(() => import("../pages/home"));
 const Photos = loadable(() => import("../pages/photos"));
 
 function App() {
     return (
         <ThemeProvider theme={theme}>
-            <CssBaseline>
+            {/* <CssBaseline> */}
                 <BrowserRouter>
+                    <Navbar />
                     <Routes>
                         <Route exact path={LANDING_ROUTE} element={<Home />} />
                         <Route exact path={PHOTOS_ROUTE} element={<Photos />} />
                     </Routes>
                 </BrowserRouter>
-            </CssBaseline> 
+            {/* </CssBaseline>  */}
         </ThemeProvider>
     )
 }
