@@ -1,0 +1,667 @@
+*::before,
+*::after {
+    box-sizing: border-box;
+}
+
+/* home */
+
+.navbar {
+    padding: 0.5% 0;
+    text-align: center;
+    /* background-color: opaque; */
+  }
+  
+  .navlist {
+    list-style-type: none;
+    display: inline-block;
+    margin: 5px 10px;
+  }
+  
+  .link {
+    color: #333;
+    text-decoration: none;
+    display: inline-block;
+    position: relative;
+  }
+  
+  .link:after {
+    content: '';
+    display: block;
+    margin: auto;
+    height: 3px;
+    width: 0;
+    top: 5px;
+    background: transparent;
+    transition: all 0.3s;
+  }
+  
+  .link:hover::after {
+    width: 100%;
+    background: #800020;
+  }
+  
+  .activeNav:after {
+    width: 100%;
+    background: #800020;
+  }
+
+  .hero {
+    position: relative;
+    width: 90%;
+    margin: auto;
+    background-color: #000000;
+    overflow: hidden;
+    border-top-left-radius: 1rem;
+    border-top-right-radius: 1rem;
+  }
+
+.heroImg {
+    display: block;
+    width: 100%;
+    object-fit: cover;
+    object-position: center;
+    opacity: 0.25;
+}  
+
+.heroHeader {
+    position: absolute;
+    font-family: "Montserrat", sans-serif;
+    width: 100%;
+    display: inline-block;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    font-size: 4rem;
+    color: #ffffff;
+}
+
+.avatarBoard {
+  width: 90%;
+  margin: auto;
+}
+
+.line1 {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.lineText {
+  width: 55%;
+}
+
+.couple {
+  display: flex;
+  flex-direction: row;
+  width: 40%;
+  margin: 30px auto;
+}
+
+.couple::before {
+  margin-right: 10px;
+  content: "";
+  flex: 1 1;
+  border-bottom: 1px solid;
+  margin: auto;
+}
+
+.couple::after {
+  margin-left: 10px;
+  content: "";
+  flex: 1 1;
+  border-bottom: 1px solid;
+  margin: auto;
+}
+
+.innerTextH2 {
+  margin-bottom: 20px;
+  font-family: 'Handlee', cursive;
+  font-size: 3.5rem;
+  font-weight: 800;
+}
+
+.innerTextH6 {
+  margin-top: -10px;
+  font-family: "Montserrat", sans-serif;
+  font-size: 0.9rem;
+  font-weight: 500;
+  line-height: 1.8;
+}
+
+.article {
+  position: relative;
+  width: 90%;
+  margin: 50px auto;
+  background-color: #000000;
+  overflow: hidden;
+}
+
+.articleImg {
+  display: block;
+  width: 100%;
+  object-fit: cover;
+}
+
+.articleNote {
+  position: absolute;
+  font-family: "Montserrat", sans-serif;
+  width: 100%;
+  display: inline-block;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  font-size: 2rem;
+  color: #FFE5B4;
+}
+
+.footer {
+  background-color: #ab936b;
+  width: 100%;
+}
+
+.footerImg {
+  width: 40%;
+}
+
+.toast {
+  margin: auto;
+  padding: 2%;
+  min-height: 400px;
+  max-width: 550px;
+  background: #f1f5f8;
+  color: #800020;
+  background-image: radial-gradient(#bfc0c1 7.2%, transparent 0);
+  background-size: 25px 25px;
+  border: 3px solid #ab936b;
+  border-radius: 2rem;
+  box-shadow: 4px 3px 7px 2px #00000040;
+}
+
+.corner_ornamental_container {
+  position: absolute;
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+}
+
+.corner_ornamental1 {
+  width: 15%;
+}
+
+.corner_ornamental2 {
+  width: 15%;
+  transform: scaleX(-1);
+}
+
+.countdown {
+  width: 80%;
+  margin: auto;
+  display: flex;
+  justify-content: space-evenly;
+}
+
+.div {
+  width: 15%;
+  color: #ffffff;
+  font-family: "Handlee", cursive;
+}
+
+.divH1 {
+  font-size: 4rem;
+  font-weight: 800;
+}
+
+.divH3 {
+  font-size: 1.2rem;
+  font-weight: 800;
+}
+
+.flutteringFlowersContainer {
+  display: block;
+  position: absolute;
+  width: 30%;
+  transform: translate(-50%, -50%);
+}
+
+.flutteringFlowers {
+  width: 100%;
+}
+
+.heroNoteContainer {
+  width: 90%;
+  margin: 100px auto;
+  padding: 0 0 3%;
+  text-align: center;
+  background-color: #800020;
+  color: #ffffff;
+}
+
+.heroText1 {
+  background-color: #ab936b;
+  color: #000000;
+  padding: 20px 0 50px;
+  font-family: "Handlee", cursive;
+  font-size: 2.5rem;
+  font-weight: 800;
+}
+
+.heroText2 {
+  position: relative;
+  padding: 2% 0 0;
+  font-family: "Montserrat", sans-serif;
+  font-size: 1.1rem;
+  font-weight: 800;
+}
+
+.goldenRingsContainer {
+  position: relative;
+  display: inline;
+  top: 30px;
+}
+
+.goldenRings {
+  width: 15%;
+}
+
+.roundedAvatar {
+  border-radius: 50%;
+  width: 40%;
+  overflow: hidden;
+}
+
+.roundedImg {
+  width: 100%;
+  object-fit: contain;
+}
+
+.eventHeader {
+  font-family: "Montserrat", sans-serif;
+  font-weight: 400;
+}
+
+.eventSection {
+  width: 90%;
+  margin: 0 auto 100px;
+  display: flex;
+  justify-content: center;
+}
+
+.column {
+  width: 20%;
+  text-align: center;
+}
+
+.columnImg {
+  width: 90%;
+  height: 100px;
+}
+
+.columnH3 {
+  font-family: "Handlee", cursive;
+  font-size: 1.8rem;
+  font-weight: 400;
+}
+
+.columnH4 {
+  font-family: "Montserrat", sans-serif;
+  font-size: 1rem;
+  font-weight: 400;
+}
+
+.map {
+  width: 60%;
+}
+
+.imgBox {
+  background-color: #800020;
+  width: 40%;
+  margin: auto;
+  border-radius: 50%;
+  border: 1px solid #ab936b;
+  box-shadow: 2px 2px 2px 1px #ab936b;
+}
+
+/* photos */
+.photoLayout {
+    padding: 30% 0;
+    position: relative;
+    width: 100%;
+    background-color: #000000;
+}
+
+.photoLayoutImg {
+  display: block;
+  width: 100%;
+  object-fit: cover;
+  object-position: center;
+  opacity: 0.25;
+}
+
+.innerDivs {
+  position: absolute;
+  width: 100%;
+  display: inline-block;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
+.note {
+  padding: 30px 0;
+}
+
+.noteH1 {
+  letter-spacing: 30px;
+  font-size: 3rem;
+  font-weight: 600;
+  color: #800020;
+  font-family: "Handlee", cursive;
+}
+
+.photoGrid {
+  width: 90%;
+  margin: 100px auto;
+  display: flex;
+  justify-content: space-evenly;
+}
+
+.photoBox1 {
+  position: relative;
+  width: 30%;
+  overflow: hidden;
+  cursor: pointer;
+}
+
+.photoBox1:hover {
+  transform: scale(1.1);
+  transition: all 0.3s;
+}
+
+.photo {
+  border: 3px solid #ab936b;
+  border-radius: 1.5rem;
+  display: block;
+  width: 95%;
+  margin: auto;
+  object-fit: cover;
+  object-position: center;
+}
+
+.corner_ornamental_container {
+  position: absolute;
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+}
+
+.corner_ornamental1 {
+  width: 15%;
+}
+
+.corner_ornamental2 {
+  width: 15%;
+  transform: scaleX(-1);
+}
+
+.navbar {
+  padding: 2% 0;
+  text-align: center;
+  /* background-color: opaque; */
+}
+
+.navlist {
+  list-style-type: none;
+  display: inline-block;
+  margin: 5px 10px;
+}
+
+.link {
+  color: #333;
+  text-decoration: none;
+  display: inline-block;
+  position: relative;
+}
+
+.link:after {
+  content: '';
+  display: block;
+  margin: auto;
+  height: 3px;
+  width: 0;
+  top: 5px;
+  background: transparent;
+  transition: all 0.3s;
+}
+
+.link:hover::after {
+  width: 100%;
+  background: #800020;
+}
+
+.activeNav::after {
+  width: 100%;
+  background: #800020;
+}
+
+/* md - 900px
+sm - 600px */
+
+
+
+@media only screen and (max-width: 900px) {
+
+    /* home */
+
+    .heroHeader {
+      font-size: 2.5rem;
+    }
+  
+    .line1 {
+      margin: 60px auto;
+    }
+  
+    .lineText {
+      width: 55%;
+    }
+  
+    .innerTextH2 {
+      font-size: 2.3rem;
+    }
+  
+    .innerTextH6 {
+      line-height: 1.5;
+    }
+  
+    .divH1 {
+      font-size: 2.3rem;
+    }
+  
+    .divH3 {
+      font-size: 1rem;
+    }
+  
+    .flutteringFlowersContainer {
+      width: 40%;
+    }
+  
+    .heroNoteContainer {
+      margin: 50px auto;
+    }
+  
+    .heroText1 {
+      font-size: 2rem;
+    }
+  
+    .heroText2 {
+      font-size: 0.8rem;
+    }
+  
+    .goldenRingsContainer {
+      display: block;
+      top: 5px;
+    }
+  
+    .eventHeader {
+      margin: 50px auto;
+    }
+  
+    .eventSection {
+      display: grid;
+      margin: 50px auto 100px;
+    }
+  
+    .column {
+      width: 80%;
+      margin: auto;
+    }
+  
+    .map {
+      width: 100%;
+      margin: 20px auto 50px;
+    }
+  
+    .imgBox {
+      width: 25%;
+    }
+
+    /* photos */
+
+    .photoLayout {
+        padding: 0;
+      }
+    
+      .photoLayoutImg {
+        display: none;
+      }
+    
+      .innerDivs {
+        display: block;
+        transform: none;
+        top: 0;
+        left: 0;
+      }
+    
+      .noteH1 {
+        font-size: 2rem;
+        font-weight: 500;
+        letter-spacing: 20px;
+      }
+    
+      .photoGrid {
+        width: 80%;
+        margin: 0 auto;
+        display: grid;
+      }
+    
+      .photoBox1 {
+        width: 100%;
+        cursor: none;
+        margin: 50px auto;
+      }
+    
+      .photoBox1:hover {
+        transform: none;
+      }
+  
+  }
+  
+  @media only screen and (max-width: 600px) {
+
+    /* home */
+
+    .heroHeader {
+      font-size: 1rem;
+    }
+  
+    .avatarBoard {
+      margin: 50px auto;
+    }
+  
+    .line1 {
+      display: grid;
+      justify-content: normal;
+    }
+  
+    .lineText {
+      width: 90%;
+      margin: auto;
+    }
+  
+    .innerTextH2 {
+      font-size: 2rem;
+    }
+  
+    .innerTextH6 {
+      font-size: 0.7rem;
+      line-height: 1.4;
+    }
+  
+    .toast {
+      min-height: auto;
+    }
+  
+    .corner_ornamental_container {
+      display: none;
+    }
+  
+    .divH1 {
+      font-size: 1.5rem;
+    }
+  
+    .divH3 {
+      font-size: 0.7rem;
+    }
+  
+    .flutteringFlowersContainer {
+      width: 70%;
+      margin: 30px auto;
+      transform: none;
+      position: revert;
+    }
+  
+    .heroNoteContainer {
+      margin: 50px auto;
+    }
+  
+    .heroText1 {
+      padding: 20px 0 20px;
+      font-size: 1.2rem;
+    }
+  
+    .heroText2 {
+      font-size: 0.6rem;
+    }
+  
+    .goldenRingsContainer {
+      display: block;
+      top: 0px;
+    }
+  
+    .roundedAvatar {
+      width: 100%;
+      margin: 50px auto;
+      border-radius: 5%;
+    }
+  
+    .eventHeaderH2 {
+      font-size: 1.5rem;
+    }
+
+    /* photos */
+
+    .note {
+        padding: 30px 0 50px;
+      }
+    
+      .noteH1 {
+        width: 80%;
+        margin: auto;
+        font-size: 1rem;
+        letter-spacing: 15px;
+      }
+    
+      .corner_ornamental_container {
+        display: none;
+      }
+    
+  }

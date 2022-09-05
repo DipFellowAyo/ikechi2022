@@ -1,9 +1,8 @@
-import "./index.css";
 import React from "react";
 import Box from "@material-ui/core/Box";
-import { makeStyles } from '@mui/styles';
+// import { makeStyles } from '@mui/styles';
 import HeroNote from "../components/heronote";
-// import Navbar from "../components/navbar";
+import Navbar from "../components/navbar";
 import CornerOrnamental from "../components/cornerornamental";
 import FlutteringFlowers from "../components/flutteringflowers";
 import Avatar from "../components/roundedpicture";
@@ -23,220 +22,206 @@ const style = {
   }
 }
 
-const useStyles = makeStyles(theme => ({
-  hero: {
-    position: 'relative',
-    width: '90%',
-    margin: 'auto',
-    backgroundColor: '#000000',
-    overflow: 'hidden',
-    borderTopLeftRadius: '1rem',
-    borderTopRightRadius: '1rem',
-    [theme.breakpoints.down("sm")]: {
+// const useStyles = makeStyles(theme => ({
+  // hero: {
+  //   position: 'relative',
+  //   width: '90%',
+  //   margin: 'auto',
+  //   backgroundColor: '#000000',
+  //   overflow: 'hidden',
+  //   borderTopLeftRadius: '1rem',
+  //   borderTopRightRadius: '1rem',
+  //   [theme.breakpoints.down("sm")]: {
 			
-		},
-  },
-  heroImg: {
-    display: 'block',
-    width: '100%',
-    objectFit: 'cover',
-    objectPosition: 'center',
-    opacity: '0.25',
-    [theme.breakpoints.down("sm")]: {
+	// 	},
+  // },
+  // heroImg: {
+  //   display: 'block',
+  //   width: '100%',
+  //   objectFit: 'cover',
+  //   objectPosition: 'center',
+  //   opacity: '0.25',
+  //   [theme.breakpoints.down("sm")]: {
 			
-		},
-  },
-  heroHeader: {
-    position: 'absolute',
-    fontFamily: 'Montserrat, sans-serif',
-    width: '100%',
-    display: 'inline-block',
-    top: '50%',
-    left: '50%',
-    transform: 'translate( -50%, -50% )',
-    fontSize: '4rem',
-    color: '#ffffff',
-    [theme.breakpoints.down("md")]: {
-			fontSize: '2.5rem',
-		},
-    [theme.breakpoints.down("sm")]: {
-			fontSize: '1rem',
-		},
-  },
-  avatarBoard: {
-    width: '90%',
-    margin: 'auto',
-    [theme.breakpoints.down("sm")]: {
-			margin: '50px auto'
-		},
-  },
-  line1: {
-    display: 'flex',
-    justifyContent: 'space-between',
-    alignItems: 'center',
-    [theme.breakpoints.down("md")]: {
-			margin: '60px auto'
-		},
-    [theme.breakpoints.down("sm")]: {
-			display: 'grid',
-      justifyContent: 'normal'
-		},
-  },
-  lineText: {
-    width: '55%',
-    [theme.breakpoints.down("md")]: {
-			width: '55%',
-		},
-    [theme.breakpoints.down("sm")]: {
-			width: '90%',
-      margin: 'auto'
-		},
-  },
-  couple: {
-    display: 'flex',
-    flexDirection: 'row',
-    width: '40%',
-    margin: '30px auto',
-    "&:before": {
-      marginRight: '10px',
-      content: '""',
-      flex: '1 1',
-      borderBottom: '1px solid',
-      margin: 'auto'
-    },
-    "&:after": {
-      marginLeft: '10px',
-      content: '""',
-      flex: '1 1',
-      borderBottom: '1px solid',
-      margin: 'auto'
-    }
-  },
-  innerTextH2: {
-    marginBottom: '20px',
-    fontFamily: 'Handlee, cursive',
-    fontSize: '3.5rem', 
-    fontWeight: '800',
-    [theme.breakpoints.down("md")]: {
-			fontSize: '2.3rem', 
-		},
-    [theme.breakpoints.down("sm")]: {
-			fontSize: '2rem', 
-		},
-  },
-  innerTextH6: {
-    // padding: '3%',
-    // backgroundColor: '#800020',
-    // color: '#ab936b',
-    marginTop: '-10px',
-    fontFamily: 'Montserrat, sans-serif',
-    fontSize: '0.9rem', 
-    fontWeight: '500',
-    lineHeight: '1.8',
-    [theme.breakpoints.down("md")]: {
-			lineHeight: '1.5',
-		},
-    [theme.breakpoints.down("sm")]: {
-			fontSize: '0.7rem', 
-      lineHeight: '1.4',
-		},
-  },
-  article: {
-    position: 'relative',
-    width:' 90%',
-    margin: '50px auto',
-    backgroundColor: '#000000',
-    overflow: 'hidden'
-  },
-  articleImg: {
-    display: 'block',
-    width: '100%',
-    objectFit: 'cover',
-  },
-  articleNote: {
-    position: 'absolute',
-    fontFamily: 'Montserrat, sans-serif',
-    width: '100%',
-    display: 'inline-block',
-    top: '50%',
-    left: '50%',
-    transform: 'translate( -50%, -50% )',
-    fontSize: '2rem',
-    color: '#FFE5B4'
-  },
-  footer: {
-    backgroundColor: '#ab936b',
-    width: '100%',
-  },
-  footerImg: {
-    width: '40%'
-  },
-  toast: {
-    margin: 'auto',
-    padding: '2%',
-    minHeight: '400px',
-    maxWidth: '550px',
-    background: '#f1f5f8',
-    color: '#800020',
-    backgroundImage: 'radial-gradient(#bfc0c1 7.2%, transparent 0)',
-    backgroundSize: '25px 25px',
-    border: '3px solid #ab936b',
-    borderRadius: '2rem',
-    boxShadow: '4px 3px 7px 2px #00000040',
-    [theme.breakpoints.down("md")]: {
-			
-		},
-    [theme.breakpoints.down("sm")]: {
-			minHeight: 'auto',
-		},
-  },
-  // "@keyframes type": {
-  //   "0%": {
-  //     width: '0%'
+	// 	},
+  // },
+  // heroHeader: {
+  //   position: 'absolute',
+  //   fontFamily: 'Montserrat, sans-serif',
+  //   width: '100%',
+  //   display: 'inline-block',
+  //   top: '50%',
+  //   left: '50%',
+  //   transform: 'translate( -50%, -50% )',
+  //   fontSize: '4rem',
+  //   color: '#ffffff',
+  //   [theme.breakpoints.down("md")]: {
+	// 		fontSize: '2.5rem',
+	// 	},
+  //   [theme.breakpoints.down("sm")]: {
+	// 		fontSize: '1rem',
+	// 	},
+  // },
+  // avatarBoard: {
+  //   width: '90%',
+  //   margin: 'auto',
+  //   [theme.breakpoints.down("sm")]: {
+	// 		margin: '50px auto'
+	// 	},
+  // },
+  // line1: {
+  //   display: 'flex',
+  //   justifyContent: 'space-between',
+  //   alignItems: 'center',
+  //   [theme.breakpoints.down("md")]: {
+	// 		margin: '60px auto'
+	// 	},
+  //   [theme.breakpoints.down("sm")]: {
+	// 		display: 'grid',
+  //     justifyContent: 'normal'
+	// 	},
+  // },
+  // lineText: {
+  //   width: '55%',
+  //   [theme.breakpoints.down("md")]: {
+	// 		width: '55%',
+	// 	},
+  //   [theme.breakpoints.down("sm")]: {
+	// 		width: '90%',
+  //     margin: 'auto'
+	// 	},
+  // },
+  // couple: {
+  //   display: 'flex',
+  //   flexDirection: 'row',
+  //   width: '40%',
+  //   margin: '30px auto',
+  //   "&:before": {
+  //     marginRight: '10px',
+  //     content: '""',
+  //     flex: '1 1',
+  //     borderBottom: '1px solid',
+  //     margin: 'auto'
   //   },
-  //   "100%": {
-  //     width: '100%'
+  //   "&:after": {
+  //     marginLeft: '10px',
+  //     content: '""',
+  //     flex: '1 1',
+  //     borderBottom: '1px solid',
+  //     margin: 'auto'
   //   }
   // },
-  // "@keyframes blink": {
-  //   "0%, 100%": {
-  //     borderRight: "2px solid transparent"
-  //   },
-  //   "50%": {
-  //     borderRight: "2px solid #222"
-  //   }
+  // innerTextH2: {
+  //   marginBottom: '20px',
+  //   fontFamily: 'Handlee, cursive',
+  //   fontSize: '3.5rem', 
+  //   fontWeight: '800',
+  //   [theme.breakpoints.down("md")]: {
+	// 		fontSize: '2.3rem', 
+	// 	},
+  //   [theme.breakpoints.down("sm")]: {
+	// 		fontSize: '2rem', 
+	// 	},
+  // },
+  // innerTextH6: {
+  //   // padding: '3%',
+  //   // backgroundColor: '#800020',
+  //   // color: '#ab936b',
+  //   marginTop: '-10px',
+  //   fontFamily: 'Montserrat, sans-serif',
+  //   fontSize: '0.9rem', 
+  //   fontWeight: '500',
+  //   lineHeight: '1.8',
+  //   [theme.breakpoints.down("md")]: {
+	// 		lineHeight: '1.5',
+	// 	},
+  //   [theme.breakpoints.down("sm")]: {
+	// 		fontSize: '0.7rem', 
+  //     lineHeight: '1.4',
+	// 	},
+  // },
+  // article: {
+  //   position: 'relative',
+  //   width:' 90%',
+  //   margin: '50px auto',
+  //   backgroundColor: '#000000',
+  //   overflow: 'hidden'
+  // },
+  // articleImg: {
+  //   display: 'block',
+  //   width: '100%',
+  //   objectFit: 'cover',
+  // },
+  // articleNote: {
+  //   position: 'absolute',
+  //   fontFamily: 'Montserrat, sans-serif',
+  //   width: '100%',
+  //   display: 'inline-block',
+  //   top: '50%',
+  //   left: '50%',
+  //   transform: 'translate( -50%, -50% )',
+  //   fontSize: '2rem',
+  //   color: '#FFE5B4'
+  // },
+  // footer: {
+  //   backgroundColor: '#ab936b',
+  //   width: '100%',
+  // },
+  // footerImg: {
+  //   width: '40%'
+  // },
+  // toast: {
+  //   margin: 'auto',
+  //   padding: '2%',
+  //   minHeight: '400px',
+  //   maxWidth: '550px',
+  //   background: '#f1f5f8',
+  //   color: '#800020',
+  //   backgroundImage: 'radial-gradient(#bfc0c1 7.2%, transparent 0)',
+  //   backgroundSize: '25px 25px',
+  //   border: '3px solid #ab936b',
+  //   borderRadius: '2rem',
+  //   boxShadow: '4px 3px 7px 2px #00000040',
+  //   [theme.breakpoints.down("md")]: {
+			
+	// 	},
+  //   [theme.breakpoints.down("sm")]: {
+	// 		minHeight: 'auto',
+	// 	},
   // }
-}))
+// }))
 
 function App() {
 
-  const classes = useStyles();
+  // const classes = useStyles();
 
   return (
       <Box style={style.main}>
         <CornerOrnamental />
 
-        <Box className={classes.hero}>
-          <img className={classes.heroImg} 
+        <Navbar />
+
+        <Box className='hero'>
+          <img className='heroImg' 
             src={process.env.PUBLIC_URL+"/images/6.jpg"}
             alt="hero-img"
           />
-          <div className={classes.heroHeader}>
+          <div className='heroHeader'>
             <h3>We're getting married!</h3>
           </div>
         </Box>
 
         <HeroNote />
 
-        <div className={classes.avatarBoard}>
-          <div className={classes.line1}>
+        <div className='avatarBoard'>
+          <div className='line1'>
             <Avatar 
               img = {process.env.PUBLIC_URL+"/images/7.jpg"}
             />
-            <div className={classes.lineText}>
-              <h2 className={classes.innerTextH2}>Ikechukwu Udochukwu Adindu</h2>
-              <h6 className={`${classes.couple} ${classes.innerTextH6}`}>groom</h6>
-              <h6 className={`${classes.innerTextH6} ${classes.toast}`}><i>My Darling,<br /><br />
+            <div className='lineText'>
+              <h2 className='innerTextH2'>Ikechukwu Udochukwu Adindu</h2>
+              <h6 className='couple innerTextH6'>groom</h6>
+              <h6 className='innerTextH6 toast'><i>My Darling,<br /><br />
               I have pondered on the words which can fully encapsulate and deliver my feelings. If I could try, it would be excitement and serenity. <br /> 
               The excitement of what the future holds-all the moments, the journeys, the growth, the highs and the lows. I look forward to savoring every bit of these. <br /> 
               And the serenity that I have the best person at my side to go through all these together with. There's no person that I would want to through life's journey with-other than you. <br /> 
@@ -249,11 +234,11 @@ function App() {
             top="" 
             side="48%"
           />
-          <div className={classes.line1}>
-            <div className={classes.lineText}>
-            <h2 className={classes.innerTextH2}>Chisomeje Roseline Nwatu</h2>
-            <h6 className={`${classes.couple} ${classes.innerTextH6}`}>bride</h6>
-            <h6 className={`${classes.innerTextH6} ${classes.toast}`}><i>When I first met you, my focus was kept on you, consistently trying to solve the puzzle of who you are. <br />
+          <div className='line1'>
+            <div className='lineText'>
+            <h2 className='innerTextH2'>Chisomeje Roseline Nwatu</h2>
+            <h6 className='couple innerTextH6'>bride</h6>
+            <h6 className='innerTextH6 toast'><i>When I first met you, my focus was kept on you, consistently trying to solve the puzzle of who you are. <br />
             But Voila! as our love grew, I couldn't wait to see you again and be entertained by the chemistry we shared. <br />
             I like to think of our love as a rainbow that brightens both our lives and has a long lasting impression on those who witness it. <br />
             The DAY that seemed far-off has finally arrived and we are doing this, <br /><br />
@@ -268,17 +253,17 @@ function App() {
           </div>
         </div>
       
-        <div className={classes.article}>
-          <img className={classes.articleImg} src={process.env.PUBLIC_URL+"/vectors/background.png"} alt="article-img" />
-          <div className={classes.articleNote}>
+        <div className='article'>
+          <img className='articleImg' src={process.env.PUBLIC_URL+"/vectors/background.png"} alt="article-img" />
+          <div className='articleNote'>
             <Countdown />
           </div>
         </div>
 
         <Event />
 
-        <div className={classes.footer}>
-          <img className={classes.footerImg} src={process.env.PUBLIC_URL+"/vectors/floral_footer.svg"} alt="floral_footer" />
+        <div className='footer'>
+          <img className='footerImg' src={process.env.PUBLIC_URL+"/vectors/floral_footer.svg"} alt="floral_footer" />
           {/* <h3 className={classes.footerNote}>© Hezee</h3> */}
         </div>
 
