@@ -93,20 +93,20 @@
 .couple {
   display: flex;
   flex-direction: row;
-  width: 40%;
-  margin: 30px auto;
+  width: 20%;
+  margin: 20px auto;
 }
 
-.couple::before {
-  margin-right: 10px;
+.couple:before {
+  margin-right: 5px;
   content: "";
   flex: 1 1;
   border-bottom: 1px solid;
   margin: auto;
 }
 
-.couple::after {
-  margin-left: 10px;
+.couple:after {
+  margin-left: 5px;
   content: "";
   flex: 1 1;
   border-bottom: 1px solid;

@@ -198,7 +198,7 @@ function App() {
   return (
       <Box style={style.main}>
         <CornerOrnamental />
-
+  
         <Navbar />
 
         <Box className='hero'>
